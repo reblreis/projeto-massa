@@ -1,0 +1,194 @@
+/* CSS = Cascading Style Sheets ou Folhas de Estilo em Cascata
+Seletores, declaração, propriedades, valores 
+Código Hexadecimal RGB = #fa1245 0000 = BLACK FFFFFF = WHITE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CABEÇALHO */
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+}
+
+header {
+    display: flex; /*Ajustar a imagem */
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.logo img{
+    width: 211px;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign-in button {
+    border: none;    
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"] { /*três seletores que vão receber as mesmas propriedades*/
+    width: 180px;
+    padding: 0.5rem; /* mesmo tamanho */
+    border-radius: 5px; /* botão arredondado */
+    border: 1px solid #ccc;
+}
+
+section {
+    padding: 3rem 0 4rem 0; /* Tamanho relativo */
+}
+
+/* CONTEÚDO DA PÁGINA */
+
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h1.title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+/* ID só pode ter uma ID por página
+   CLASS pode ter várias */
+
+.gray {
+    background-color: #f7f7f7;
+}
+
+.container {
+   max-width: 1000px; /* para ajustar o texto se a janela for menor que 1000px = largura */
+    margin: auto; /* margem automatica para centralizar */
+    padding: 0 1rem; /* espaço para esquerda e direita */
+}
+
+.hero {
+    width: 60%;
+    margin: auto;
+}
+
+.intro p { /* só o p que estiver dentro do intro será formatado */
+    margin: 1rem 0; /* esquerda e direita */
+    font-size: 1.5rem;
+    font-weight: 100; /* 100 é a fonte mais fina */
+}
+
+.intro .cta { /*cta está dentro de intro */
+    margin: 2rem 0;
+}
+
+.button {
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.primary {
+    background-color: #3396f3;
+    color: white;
+}
+
+.secondary {
+    background-color: white;
+    color: #444;
+}
+
+.cards {
+    display: flex;
+        justify-content: space-between;
+    
+}
+
+.card {
+    /* alinhamento do texto */
+    display: flex; /*flexbox*/
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    /* largura e altura */
+    height: 150px;
+    width: 18%; /* 100% dividido por 5 = 20% (menos espaço entre eles como 18% */
+
+    /* conteúdo do texto */
+    border-radius: 10px;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.card.red { /* Um elemento tem que ter as duas classes */
+    background-color: #ec454e;
+}
+
+.card.blue {
+    background-color: #42b0f8;
+}
+
+.card.purple {
+    background-color: #9e69d5;
+}
+
+.card.yellow {
+    background-color: #f4a823;
+}
+
+.card.green {
+    background-color: #3cbfa1;
+}
+
+.members {
+    display: flex;
+        justify-content: space-between;
+}
+
+.member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /*arredondado*/
+}
+
+/*CABEÇALHO*/
+
+footer {
+    background-color: #3788bf;
+}
+
+footer ul {
+    /*flexbox*/
+    display: flex;
+    padding-top: 3rem;
+
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+footer a {
+    color: white;
+}
+
+footer p.copyright {
+    padding: 3rem 0;
+    text-align: center;
+    color: #ffffffdd;
+}
+
